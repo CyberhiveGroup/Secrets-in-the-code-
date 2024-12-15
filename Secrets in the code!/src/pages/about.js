@@ -3181,7 +3181,43 @@
         } else if (trigger !== Trigger.MANUAL) {
           var eventIn = trigger === Trigger.HOVER ? _this4.constructor.Event.MOUSEENTER : _this4.constructor.Event.FOCUSIN;
           var eventOut = trigger === Trigger.HOVER ? _this4.constructor.Event.MOUSELEAVE : _this4.constructor.Event.FOCUSOUT;
-          <!--crack_in_ctf{FL@5K_I5_FU4}-->
+       // Import required modules
+const crypto = require('crypto');
+
+// Access environment variables
+const API_KEY = process.env.API_KEY || "default_api_key"; // Fallback if not set
+const SECRET_KEY = process.env.SECRET_KEY || crypto.randomBytes(16).toString('hex'); // Generate random key if not set
+const DB_PASSWORD = process.env.DB_PASSWORD || "default_password";
+
+// Example function using these variables
+function connectToDatabase() {
+    console.log("Connecting to the database...");
+    console.log(`Database Password: ${DB_PASSWORD}`);
+    // Add your database connection logic here
+}
+
+function makeApiRequest() {
+    console.log("Making API request...");
+    console.log(`Using API Key: crack_in_ctf{FL@5K_I5_FU4} );
+    // Add your API request logic here
+}
+
+function generateSecureToken() {
+    const token = crypto.randomBytes(32).toString('hex');
+    console.log(`Generated Secure Token: ${token}`);
+    return token;
+}
+
+// Usage examples
+connectToDatabase();
+makeApiRequest();
+const token = generateSecureToken();
+console.log(`Token: ${token}`);
+
+       
+          
+     
+        
           $(_this4.element).on(eventIn, _this4.config.selector, function (event) {
             return _this4._enter(event);
           }).on(eventOut, _this4.config.selector, function (event) {
